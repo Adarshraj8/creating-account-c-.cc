@@ -35,15 +35,35 @@ int main()
     	cout<<"enter how much money you want to add: "<<endl;
     	double add;
     	cin>>add;
-    	cout<<"your new balance  is: "<<balance+add<<"dollars"<<endl;
+    	cout<<"your new balance  is: "<<balance+add<<" dollars "<<endl;
     	
 		}
 		else{
 			cout<<"alright"<<endl;
 		}
 		cout<<"would you like to bagel today ?"<<endl;
-	return 0;
+	   
+	   string q2;
+	   getline(cin,q2);
+	   if(q2=="yes"){
+	   	cout<<"please select what bagel you want "<<endl;
+	   	string bageltype[]={"nature bagel","cheese bagel","egg bagel"};
+	   	double bagelprices[]={3.00,4.00,5.00};
+	   	
+	   	cout<<"1. "<<bageltype[0]<<"--"<<bagelprices[0]<<"dollers"<<endl;
+	   	cout<<"2. "<<bageltype[0]<<"--"<<bagelprices[1]<<"dollers"<<endl;
+	   	cout<<"3. "<<bageltype[0]<<"--"<<bagelprices[2]<<"dollers"<<endl;
+	   	cout<<"your choice: "<<endl;
+	   	int q3;
+	   	cin>>q3;
+	   }
+	   else{
+	   	cout<<"Alright have a good day"<<endl;
+	   }
+	   return 0;
+}
+	   
     
 	
-}
+
 
